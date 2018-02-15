@@ -1,0 +1,32 @@
+php-hamcrest (2.0.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release (2.0.0)
+    - d/watch: allow for versions beyond 1 for newer php-mockery.
+    - d/patches: remove now unnecessary patches.
+    - d/t/phpunit: drop now unnecessary patching.
+      + Also drop now unused d/p/DEP-8.
+  * debian/patches/phpunit6_compatibility.patch: PHPUnit 6 has moved to
+    namespaced classes.
+
+ -- Nishanth Aravamudan <nish.aravamudan@canonical.com>  Thu, 15 Feb 2018 09:41:03 -0800
+
+php-hamcrest (1.2.2-2ubuntu1) bionic; urgency=medium
+
+
+ -- Nishanth Aravamudan <nish.aravamudan@canonical.com>  Thu, 15 Feb 2018 09:40:08 -0800
+
+php-hamcrest (1.2.2-2) unstable; urgency=medium
+
+  * Track version 1 currently used by php-mockery
+  * PHP 7.0 transition:
+    - Fix backward incompatible change of PHP 7
+    - Rebuild with recent pkg-php-tools
+  * Update Standards-Version to 3.9.7
+
+ -- David Prévot <taffit@debian.org>  Sat, 12 Mar 2016 14:44:43 -0400
+
+php-hamcrest (1.2.2-1) unstable; urgency=low
+
+  * Initial release (php-mockery dependency)
+
+ -- David Prévot <taffit@debian.org>  Mon, 01 Feb 2016 20:34:59 -0400
